@@ -679,6 +679,13 @@
       <img src="https://i.imgur.com/VTFTyTJ.png" alt="Logo" class="w-40 mx-auto">
       <h1 class="text-3xl font-bold mt-4">Gerador de Sensibilidade Pago</h1>
     </div>
+    
+    <button id="infoContaBtn"
+  class="w-full bg-red-600 hover:bg-red-700 py-3 rounded-lg font-bold transition hover:scale-105">
+  Informações da Conta
+</button>
+
+<div id="infoContaBox" class="hidden mt-6 bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6 space-y-3 text-lg"></div>
 
     <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
       <label class="block text-lg font-medium mb-4">Sistema Operacional</label>
@@ -716,9 +723,9 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
   import { 
     getAuth, 
-    onAuthStateChanged, 
-    setPersistence, 
-    inMemoryPersistence 
+    onAuthStateChanged,
+    setPersistence,
+    inMemoryPersistence
   } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
   const firebaseConfig = {
@@ -731,14 +738,34 @@
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
 
-  // 🚫 FORÇA NÃO PERSISTIR
   await setPersistence(auth, inMemoryPersistence);
 
-  // 🔒 BLOQUEIO REAL
+  const btn = document.getElementById("infoContaBtn");
+  const box = document.getElementById("infoContaBox");
+
   onAuthStateChanged(auth, (user) => {
     if (!user) {
       window.location.replace("index.html");
+      return;
     }
+
+    btn.onclick = () => {
+      const criado = new Date(user.metadata.creationTime);
+      const ultimoLogin = new Date(user.metadata.lastSignInTime);
+
+      box.innerHTML = `
+        <div><span class="text-gray-400">📅 Conta criada em:</span><br>
+        <strong>${criado.toLocaleString()}</strong></div>
+
+        <div><span class="text-gray-400">🟢 Status:</span><br>
+        <strong class="text-green-500">Ativo</strong></div>
+
+        <div><span class="text-gray-400">⏱ Último login:</span><br>
+        <strong>${ultimoLogin.toLocaleString()}</strong></div>
+      `;
+
+      box.classList.toggle("hidden");
+    };
   });
 </script>
 
