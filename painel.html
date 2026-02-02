@@ -1,0 +1,936 @@
+<html lang="pt-BR" class="bg-black text-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espanca Sensi - Gerador</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #popup {
+      display: flex;
+    }
+    @media (min-width: 640px) {
+      .max-w-2xl {
+        max-width: 42rem;
+      }
+    }
+  </style>
+  <style>
+    *, ::before, ::after {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x:;
+      --tw-pan-y:;
+      --tw-pinch-zoom:;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position:;
+      --tw-gradient-via-position:;
+      --tw-gradient-to-position:;
+      --tw-ordinal:;
+      --tw-slashed-zero:;
+      --tw-numeric-figure:;
+      --tw-numeric-spacing:;
+      --tw-numeric-fraction:;
+      --tw-ring-inset:;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur:;
+      --tw-brightness:;
+      --tw-contrast:;
+      --tw-grayscale:;
+      --tw-hue-rotate:;
+      --tw-invert:;
+      --tw-saturate:;
+      --tw-sepia:;
+      --tw-drop-shadow:;
+      --tw-backdrop-blur:;
+      --tw-backdrop-brightness:;
+      --tw-backdrop-contrast:;
+      --tw-backdrop-grayscale:;
+      --tw-backdrop-hue-rotate:;
+      --tw-backdrop-invert:;
+      --tw-backdrop-opacity:;
+      --tw-backdrop-saturate:;
+      --tw-backdrop-sepia:;
+      --tw-contain-size:;
+      --tw-contain-layout:;
+      --tw-contain-paint:;
+      --tw-contain-style:
+    }
+
+    ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x:;
+      --tw-pan-y:;
+      --tw-pinch-zoom:;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position:;
+      --tw-gradient-via-position:;
+      --tw-gradient-to-position:;
+      --tw-ordinal:;
+      --tw-slashed-zero:;
+      --tw-numeric-figure:;
+      --tw-numeric-spacing:;
+      --tw-numeric-fraction:;
+      --tw-ring-inset:;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur:;
+      --tw-brightness:;
+      --tw-contrast:;
+      --tw-grayscale:;
+      --tw-hue-rotate:;
+      --tw-invert:;
+      --tw-saturate:;
+      --tw-sepia:;
+      --tw-drop-shadow:;
+      --tw-backdrop-blur:;
+      --tw-backdrop-brightness:;
+      --tw-backdrop-contrast:;
+      --tw-backdrop-grayscale:;
+      --tw-backdrop-hue-rotate:;
+      --tw-backdrop-invert:;
+      --tw-backdrop-opacity:;
+      --tw-backdrop-saturate:;
+      --tw-backdrop-sepia:;
+      --tw-contain-size:;
+      --tw-contain-layout:;
+      --tw-contain-paint:;
+      --tw-contain-style:
+    }
+
+    /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb
+    }
+
+    ::after,::before {
+      --tw-content: ''
+    }
+
+:host,html {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      -moz-tab-size: 4;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    body {
+      margin: 0;
+      line-height: inherit
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit
+    }
+
+    b,strong {
+      font-weight: bolder
+    }
+
+    code,kbd,pre,samp {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    button,input,optgroup,select,textarea {
+      font-family: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0
+    }
+
+    button,select {
+      text-transform: none
+    }
+
+    button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]) {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none
+    }
+
+:-moz-focusring {
+      outline: auto
+    }
+
+:-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    ::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [type=search] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit
+    }
+
+    summary {
+      display: list-item
+    }
+
+    blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre {
+      margin: 0
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0
+    }
+
+    legend {
+      padding: 0
+    }
+
+    menu,ol,ul {
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    dialog {
+      padding: 0
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    input::placeholder,textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af
+    }
+
+    [role=button],button {
+      cursor: pointer
+    }
+
+:disabled {
+      cursor: default
+    }
+
+    audio,canvas,embed,iframe,img,object,svg,video {
+      display: block;
+      vertical-align: middle
+    }
+
+    img,video {
+      max-width: 100%;
+      height: auto
+    }
+
+    [hidden]:where(:not([hidden=until-found])) {
+      display: none
+    }
+
+    .fixed {
+      position: fixed
+    }
+
+    .inset-0 {
+      inset: 0px
+    }
+
+    .z-50 {
+      z-index: 50
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem
+    }
+
+    .mb-8 {
+      margin-bottom: 2rem
+    }
+
+    .mt-4 {
+      margin-top: 1rem
+    }
+
+    .mt-6 {
+      margin-top: 1.5rem
+    }
+
+    .block {
+      display: block
+    }
+
+    .flex {
+      display: flex
+    }
+
+    .grid {
+      display: grid
+    }
+
+    .hidden {
+      display: none
+    }
+
+    .h-16 {
+      height: 4rem
+    }
+
+    .min-h-screen {
+      min-height: 100vh
+    }
+
+    .w-1\/2 {
+      width: 50%
+    }
+
+    .w-16 {
+      width: 4rem
+    }
+
+    .w-40 {
+      width: 10rem
+    }
+
+    .w-full {
+      width: 100%
+    }
+
+    .max-w-2xl {
+      max-width: 42rem
+    }
+
+    .transform {
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    }
+
+    @keyframes pulse {
+      50% {
+        opacity: .5
+      }}
+
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }}
+
+    .animate-spin {
+      animation: spin 1s linear infinite
+    }
+
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr))
+    }
+
+    .flex-col {
+      flex-direction: column
+    }
+
+    .items-center {
+      align-items: center
+    }
+
+    .justify-center {
+      justify-content: center
+    }
+
+    .gap-4 {
+      gap: 1rem
+    }
+
+    .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+      --tw-space-y-reverse: 0;
+      margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+      margin-bottom: calc(1.5rem * var(--tw-space-y-reverse))
+    }
+
+    .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+      --tw-space-y-reverse: 0;
+      margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+      margin-bottom: calc(2rem * var(--tw-space-y-reverse))
+    }
+
+    .rounded-full {
+      border-radius: 9999px
+    }
+
+    .rounded-lg {
+      border-radius: 0.5rem
+    }
+
+    .rounded-md {
+      border-radius: 0.375rem
+    }
+
+    .rounded-xl {
+      border-radius: 0.75rem
+    }
+
+    .border {
+      border-width: 1px
+    }
+
+    .border-4 {
+      border-width: 4px
+    }
+
+    .border-gray-600 {
+      --tw-border-opacity: 1;
+      border-color: rgb(75 85 99 / var(--tw-border-opacity, 1))
+    }
+
+    .border-gray-700\/50 {
+      border-color: rgb(55 65 81 / 0.5)
+    }
+
+    .border-t-red-500 {
+      --tw-border-opacity: 1;
+      border-top-color: rgb(239 68 68 / var(--tw-border-opacity, 1))
+    }
+
+    .bg-\[\#1a1c2c\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(26 28 44 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-\[\#a12323\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(161 35 35 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-black {
+      --tw-bg-opacity: 1;
+      background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1))
+    }
+
+    .bg-black\/30 {
+      background-color: rgb(0 0 0 / 0.3)
+    }
+
+    .bg-black\/95 {
+      background-color: rgb(0 0 0 / 0.95)
+    }
+
+    .bg-red-600 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1))
+    }
+
+    .p-1 {
+      padding: 0.25rem
+    }
+
+    .p-4 {
+      padding: 1rem
+    }
+
+    .p-6 {
+      padding: 1.5rem
+    }
+
+    .px-12 {
+      padding-left: 3rem;
+      padding-right: 3rem
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem
+    }
+
+    .py-12 {
+      padding-top: 3rem;
+      padding-bottom: 3rem
+    }
+
+    .py-3 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem
+    }
+
+    .py-5 {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem
+    }
+
+    .py-6 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem
+    }
+
+    .text-center {
+      text-align: center
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem
+    }
+
+    .text-3xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem
+    }
+
+    .text-5xl {
+      font-size: 3rem;
+      line-height: 1
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+      line-height: 1.75rem
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+      line-height: 1.75rem
+    }
+
+    .font-black {
+      font-weight: 900
+    }
+
+    .font-bold {
+      font-weight: 700
+    }
+
+    .font-medium {
+      font-weight: 500
+    }
+
+    .text-gray-400 {
+      --tw-text-opacity: 1;
+      color: rgb(156 163 175 / var(--tw-text-opacity, 1))
+    }
+
+    .text-red-500 {
+      --tw-text-opacity: 1;
+      color: rgb(239 68 68 / var(--tw-text-opacity, 1))
+    }
+
+    .text-red-600 {
+      --tw-text-opacity: 1;
+      color: rgb(220 38 38 / var(--tw-text-opacity, 1))
+    }
+
+    .text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+    }
+
+    .transition {
+      transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms
+    }
+
+    .hover\:scale-105:hover {
+      --tw-scale-x: 1.05;
+      --tw-scale-y: 1.05;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    }
+
+    .hover\:scale-110:hover {
+      --tw-scale-x: 1.1;
+      --tw-scale-y: 1.1;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+    }
+
+    .hover\:bg-\[\#b03030\]:hover {
+      --tw-bg-opacity: 1;
+      background-color: rgb(176 48 48 / var(--tw-bg-opacity, 1))
+    }
+
+    .hover\:bg-red-700:hover {
+      --tw-bg-opacity: 1;
+      background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1))
+    }
+
+    .focus\:ring-2:focus {
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+    }
+
+    .focus\:ring-red-500:focus {
+      --tw-ring-opacity: 1;
+      --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity, 1))
+    }
+
+    @media (min-width: 640px) {
+      .sm\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+      }}
+
+    @media (min-width: 768px) {
+      .md\:text-7xl {
+        font-size: 4.5rem;
+        line-height: 1
+      }}
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+
+  <div class="w-full max-w-2xl space-y-8">
+    <div class="text-center mb-8">
+      <img src="https://i.imgur.com/VTFTyTJ.png" alt="Logo" class="w-40 mx-auto">
+      <h1 class="text-3xl font-bold mt-4">Gerador de Sensibilidade Pago</h1>
+    </div>
+
+    <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <label class="block text-lg font-medium mb-4">Sistema Operacional</label>
+      <div class="flex bg-black/30 rounded-lg p-1">
+        <button id="androidBtn" class="w-1/2 py-3 rounded-md font-bold bg-red-600">Android</button>
+        <button id="iosBtn" class="w-1/2 py-3 rounded-md font-bold text-gray-400">iOS</button>
+      </div>
+    </div>
+
+    <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <label class="block text-lg font-medium mb-4">Modelo do celular</label>
+      <input id="modelo" type="text" placeholder="Ex: Galaxy S23, iPhone 14" class="w-full px-4 py-3 bg-black/30 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500">
+    </div>
+
+    <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <label class="block text-lg font-medium mb-4">Escolha o nível</label>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <button onclick="gerar('Baixa')" class="bg-[#a12323] hover:bg-[#b03030] py-5 rounded-lg font-bold text-xl transition hover:scale-105">Baixa</button>
+        <button onclick="gerar('Média')" class="bg-[#a12323] hover:bg-[#b03030] py-5 rounded-lg font-bold text-xl transition hover:scale-105">Média</button>
+        <button onclick="gerar('Alta')" class="bg-[#a12323] hover:bg-[#b03030] py-5 rounded-lg font-bold text-xl transition hover:scale-105">Alta</button>
+      </div>
+    </div>
+
+    <div id="loading" class="hidden text-center py-12">
+      <div class="w-16 h-16 border-4 border-gray-600 border-t-red-500 rounded-full animate-spin mx-auto"></div>
+      <p class="mt-6 text-2xl text-red-500 font-bold">
+        Gerando sensibilidade...
+      </p>
+    </div>
+
+    <div id="resultado" class="hidden space-y-6"></div>
+  </div>
+  
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { 
+    getAuth, 
+    onAuthStateChanged, 
+    setPersistence, 
+    inMemoryPersistence 
+  } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBCLAmIdulgRa1lit2D5aPu8QdxM2I43zA",
+    authDomain: "painel-espanca.firebaseapp.com",
+    projectId: "painel-espanca",
+    appId: "1:257026807953:web:6bc670881c3806e84bc730"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // 🚫 FORÇA NÃO PERSISTIR
+  await setPersistence(auth, inMemoryPersistence);
+
+  // 🔒 BLOQUEIO REAL
+  onAuthStateChanged(auth, (user) => {
+    if (!user) {
+      window.location.replace("index.html");
+    }
+  });
+</script>
+
+  <script>
+
+    let os = 'Android';
+    document.getElementById('androidBtn').onclick = () => {
+      os = 'Android'; trocar('androidBtn', 'iosBtn');
+    }
+    document.getElementById('iosBtn').onclick = () => {
+      os = 'iOS'; trocar('iosBtn', 'androidBtn');
+    }
+
+    function trocar(ativo, inativo) {
+      document.getElementById(ativo).classList.add('bg-red-600', 'text-white');
+      document.getElementById(ativo).classList.remove('text-gray-400');
+      document.getElementById(inativo).classList.remove('bg-red-600', 'text-white');
+      document.getElementById(inativo).classList.add('text-gray-400');
+    }
+
+    function rand(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    function randFloat(min, max, dec) {
+      return parseFloat((Math.random() * (max - min) + min).toFixed(dec));
+    }
+    function escolha(arr) {
+      return arr[rand(0, arr.length-1)];
+    }
+
+    async function gerar(nivel) {
+      const modelo = document.getElementById('modelo').value.trim() || (os === 'Android' ? 'Android': 'iPhone');
+      if (!modelo) return alert('Digite o modelo do celular!');
+
+      document.getElementById('loading').classList.remove('hidden');
+      document.getElementById('resultado').classList.add('hidden');
+      await new Promise(r => setTimeout(r, 4000));
+
+      const base = nivel === 'Baixa' ? {
+        g: rand(70, 100),
+        pv: rand(70, 100),
+        m2: rand(70, 100),
+        m4: rand(70, 100),
+        awm: rand(15, 25),
+        ol: rand(50, 70),
+        bt: rand(65, 80),
+        dpi: rand(410, 520)}: nivel === 'Média' ? {
+        g: rand(120, 150),
+        pv: rand(120, 150),
+        m2: rand(120, 150),
+        m4: rand(120, 150),
+        awm: rand(25, 35),
+        ol: rand(60, 80),
+        bt: rand(60, 75),
+        dpi: rand(450, 610)}: {
+        g: rand(130, 200),
+        pv: rand(130, 200),
+        m2: rand(130, 200),
+        m4: rand(130, 200),
+        awm: rand(35, 45),
+        ol: rand(70, 90),
+        bt: rand(55, 70),
+        dpi: rand(620, 740)};
+
+      const config = os === 'Android' ? {
+        geral: base.g,
+        pontoVermelho: base.pv,
+        mira2x: base.m2,
+        mira4x: base.m4,
+        miraAWM: base.awm,
+        olhadinha: base.ol,
+        botaoAtirar: base.bt,
+        dpi: base.dpi,
+        velPonteiro: escolha(['Lenta', 'Normal', 'Rápida']),
+        fonte: escolha(['Pequena', 'Padrão', 'Grande']),
+        anim: escolha(['0.5x', '1x', 'Desligada']),
+        atraso: escolha(['Curto', 'Médio', 'Longo']),
+        mouse: escolha(['Ativado', 'Desativado']),
+        permanencia: randFloat(0.1, 0.5, 1)+'s',
+        tempoLeitura: randFloat(0.1, 0.4, 2)+'s',
+        atrasoPrimeiro: randFloat(0.1, 0.4, 2)+'s',
+        numeroLeituras: rand(2, 10)+' repetições',
+        ignorarToques: randFloat(0.01, 0.05, 2)+'s',
+        destaqueLeitura: escolha(['Linha sólida fina', 'Linha sólida média', 'Linha sólida espessa']),
+        leituraPontual: randFloat(0.2, 0.8, 2)+' cm por segundo',
+        personalizarGestos: escolha(['Focar no primeiro item', 'Focar no último item', 'Rolar para frente']),
+        reduzirTitulo: escolha(['Ativado', 'Desativado']),
+        filtrarEventos: escolha(['Ativar todas as opções', 'Desativar tudo', 'Filtrar por tipo'])
+      }: {
+        geral: base.g,
+        pontoVermelho: base.pv,
+        mira2x: base.m2,
+        mira4x: base.m4,
+        miraAWM: base.awm,
+        olhadinha: base.ol,
+        botaoAtirar: base.bt,
+        cursor: rand(90, 120),
+        ciclos: rand(3, 10),
+        tolerancia: escolha(['Padrão', 'Alta', 'Baixa']),
+        segundosAdaptado: randFloat(1.5, 2.5, 2)+'s',
+        cursorMovel: escolha(['Preciso', 'Individual']),
+        velocidadeCursor: rand(100, 120)
+      };
+
+      document.getElementById('resultado').innerHTML = `
+      <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-8 text-center">
+      <h2 class="text-3xl font-bold mb-2">Sensi ${nivel} Gerada!</h2>
+      <p class="text-xl text-gray-400">${modelo} • ${os}</p>
+      </div>
+
+      <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <h3 class="text-2xl font-bold text-red-500 mb-6">Sensi no Jogo</h3>
+      <div class="grid grid-cols-2 gap-6 text-xl">
+      <div><span class="text-gray-400">Geral:</span> <strong>${config.geral}</strong></div>
+      <div><span class="text-gray-400">P. Vermelho:</span> <strong>${config.pontoVermelho}</strong></div>
+      <div><span class="text-gray-400">Mira 2x:</span> <strong>${config.mira2x}</strong></div>
+      <div><span class="text-gray-400">Mira 4x:</span> <strong>${config.mira4x}</strong></div>
+      <div><span class="text-gray-400">Mira AWM:</span> <strong>${config.miraAWM}</strong></div>
+      <div><span class="text-gray-400">Olhadinha:</span> <strong>${config.olhadinha}</strong></div>
+      <div class="col-span-2"><span class="text-gray-400">Botão de Tiro:</span> <strong>${config.botaoAtirar}%</strong></div>
+      </div>
+      </div>
+
+      ${os === 'Android' ? `
+      <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <h3 class="text-2xl font-bold text-red-500 mb-6">Ajustes Gerais do Dispositivo</h3>
+      <div class="grid grid-cols-2 gap-6 text-xl">
+      <div><span class="text-gray-400">DPI:</span> <strong>${config.dpi}</strong></div>
+      <div><span class="text-gray-400">Vel. Ponteiro:</span> <strong>${config.velPonteiro}</strong></div>
+      <div><span class="text-gray-400">Tamanho da Fonte:</span> <strong>${config.fonte}</strong></div>
+      <div><span class="text-gray-400">Escala Animações:</span> <strong>${config.anim}</strong></div>
+      <div><span class="text-gray-400">Atraso ao Tocar:</span> <strong>${config.atraso}</strong></div>
+      <div><span class="text-gray-400">Mouse Grande:</span> <strong>${config.mouse}</strong></div>
+      <div><span class="text-gray-400">Tempo de Permanência:</span> <strong>${config.permanencia}</strong></div>
+      </div>
+      </div>
+
+      <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <h3 class="text-2xl font-bold text-red-500 mb-6">Headtrick (Acesso com Interruptor) Opcional</h3>
+      <div class="grid grid-cols-2 gap-6 text-xl">
+      <div><span class="text-gray-400">Tempo Leitura Automática:</span> <strong>${config.tempoLeitura}</strong></div>
+      <div><span class="text-gray-400">Atraso Primeiro Item:</span> <strong>${config.atrasoPrimeiro}</strong></div>
+      <div><span class="text-gray-400">Número de Leituras:</span> <strong>${config.numeroLeituras}</strong></div>
+      <div><span class="text-gray-400">Ignorar Toques Repetidos:</span> <strong>${config.ignorarToques}</strong></div>
+      <div><span class="text-gray-400">Destaque para Leitura:</span> <strong>${config.destaqueLeitura}</strong></div>
+      <div><span class="text-gray-400">Leitura Pontual:</span> <strong>${config.leituraPontual}</strong></div>
+      </div>
+      </div>
+
+      <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <h3 class="text-2xl font-bold text-red-500 mb-6">Secretas (Talkback) Opcional</h3>
+      <div class="grid grid-cols-2 gap-6 text-xl">
+      <div><span class="text-gray-400">Personalizar Gestos:</span> <strong>${config.personalizarGestos}</strong></div>
+      <div><span class="text-gray-400">Reduzir Atraso Título:</span> <strong>${config.reduzirTitulo}</strong></div>
+      <div><span class="text-gray-400">Filtrar Eventos Acess.:</span> <strong>${config.filtrarEventos}</strong></div>
+      </div>
+      </div>
+      `: `
+      <div class="bg-[#1a1c2c] border border-gray-700/50 rounded-xl p-6">
+      <h3 class="text-2xl font-bold text-red-500 mb-6">Ajustes do iPhone</h3>
+      <div class="grid grid-cols-2 gap-6 text-xl">
+      <div><span class="text-gray-400">Tamanho do Cursor:</span> <strong>${config.cursor}</strong></div>
+      <div><span class="text-gray-400">Ciclos:</span> <strong>${config.ciclos}</strong></div>
+      <div><span class="text-gray-400">Tolerância ao Movimento:</span> <strong>${config.tolerancia}</strong></div>
+      <div><span class="text-gray-400">Segundos (Toque Adaptado):</span> <strong>${config.segundosAdaptado}</strong></div>
+      <div><span class="text-gray-400">Cursor Móvel:</span> <strong>${config.cursorMovel}</strong></div>
+      <div><span class="text-gray-400">Velocidade do Cursor:</span> <strong>${config.velocidadeCursor}</strong></div>
+      </div>
+      </div>
+      `}
+      `;
+
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('resultado').classList.remove('hidden');
+      document.getElementById('resultado').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+  <style>
+    .qc-cmp-showing {
+      visibility: hidden !important;
+    }
+
+    body.didomi-popup-open {
+      overflow: auto !important;
+    }
+
+    #didomi-host {
+      visibility: hidden !important;
+    }
+  </style>
+</body>
+</html>
